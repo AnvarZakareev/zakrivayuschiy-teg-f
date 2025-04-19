@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="icon" href="svg/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,8 +14,62 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <!-- <header class="header">
+      <div class="header__container">
+        <p class="header__logo">&lt;/html&gt;</p>
+        <h1 class="header__title">
+          закрывающий тег
+        </h1>
+      </div>
+    </header> -->
+    <main class="main">
+      <article class="article-card">
+          <h2 class="card__titel">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+          <span class="overlay">
+            <p class="label">&lt;/html&gt;</p>
+            <img class="image" src="./images/image.png" alt='Фургон в "пиксельном" стиле'>
+          </span>
+          <div class="card__text">
+            <p>Это было самое начало пути. На этом этапе важно было проникнуться 
+            основами и настроиться на учёбу. И, возможно, подумать, как новые 
+            знания могут повлиять на ваше будущее.</p>
+            <br />
+            <p>Место для ваших воспоминаний о начале обучения.</p>
+          </div>
+          <button class="card__icon-button">
+<!-- а вот иконку сердца придётся вставить в 
+код инлайново. Подробнее об этом в шаге с анимациями -->
+            <!-- <svg class="like-icon is-liked"></svg> -->
+            <img class="like-icon is-liked"  src="./svg/heart in paths.svg" alt="Иконка лайка">
+          </button>
+          <button class="card__like-button">
+            <span class="button__text">
+              like
+            </span>
+          </button>
+      </article>
+    <footer>
+      <button class="">
+        <svg>
+          <use href="./svg/floppy.svg#save-icon"></use>
+        </svg>
+        <span class="button__text">
+          Сохранить на память
+        </span>
+      </button>
+    </footer>
+    </main>
+
     <script src="./scripts/like.js"></script>
+
+    <!-- .icon {
+      width: 100px;
+    }
+    
+    .icon-big {
+      width: 200px;
+    }
   </body>
 </html>
