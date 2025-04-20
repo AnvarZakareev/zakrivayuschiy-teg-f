@@ -8,11 +8,17 @@
     --bold-font-weight: 700;
     /* SIZEx */
     --width: clamp(375px, 100%, 700px);
+    --text-shadow-color: #FFFFFF;
+    --seve-button-width: 335px;
+    --seve-button-height: 55px;
+
 }
 
 @media (width <= 768px) {
     :root {
     /* SIZEx */
     --width: 100%;
+    --seve-button-width: 306px;
+    --seve-button-height: 84px;
     }
 }

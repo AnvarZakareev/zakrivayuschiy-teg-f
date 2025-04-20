@@ -1,22 +1,22 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
+/* 
 БЫЛО ДО МЕНЯ
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-}
+} */
+
+/* 
+background: url(.png), linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
 */
 
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  /* background color gradient */
+  background: linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   font-family: var(--font-family), Arial, sans-serif;
   font-variation-settings: "wght" var(--regular-font-weight);
 }
@@ -53,6 +53,7 @@
 
 .main {
   display: grid;
+  gap: 50px;
   justify-content: center;
 }
 
@@ -64,14 +65,24 @@
 .label {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: clamp(0.8125rem, 0.6683rem + 0.6154vw, 0.9375rem);
+  font-family: var(--accent-font-family);
+  text-shadow: -1px 0 var(--text-shadow-color), 0 1px var(--text-shadow-color), 1px 0 var(--text-shadow-color), 0 -1px var(--text-shadow-color);
+}
+
+@supports ((text-stroke: 1px var(--text-shadow-color)) or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
+  .label {
+    -webkit-text-stroke: 1px var(--text-shadow-color);
+    text-stroke: 1px var(--text-shadow-color);
+    text-shadow: none;
+  }
 }
 
 .article-card {
-  /* display: grid; */
-  /* justify-content: center; */
-  /* margin-inline: 72px; */
-  max-width: 700px;
+  /* display: grid;
+  justify-content: right;
+  margin-inline: 72px; */
+  max-width: 696px;
   width: var(--width);
   border: 2px solid black;
 }
@@ -95,6 +106,16 @@
   margin: 25px;
 }
 
+.like-button {
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+  margin-block-end: 25px;
+  margin-inline-end: 25px;
+  /* width: 169px; */
+  height: 38px;
+}
+
 .card__button{
   font-family: var(--accent-font-family);
   font-size: 14px;
@@ -102,6 +123,55 @@
   height: 38px;
   border: none;
   background-color: transparent;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+}
+
+.card__like-button {
+  width: 130px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.button__text {
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+}
+
+    /* -------
+        FOOTER
+      -------- */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.save__icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 8px;
+  width: var(--seve-button-width);
+  height: var(--seve-button-height);
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+.wrapper {
+  width: 21px;
+  height: 21px;
+}
+
+.icon {
+
 }
 
 /* DESKTOP */
