@@ -14,7 +14,7 @@
 
 }
 
-@media (width <= 768px) {
+@media (width <= 375px) {
     :root {
     /* SIZEx */
     --width: 100%;

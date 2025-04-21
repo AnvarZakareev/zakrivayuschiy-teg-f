@@ -45,7 +45,7 @@
               <!-- <svg class="like-icon is-liked"></svg> -->
               <img class="like-icon is-liked"  src="./svg/heart in paths.svg" alt="Иконка лайка">
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button button">
               <span class="button__text">
                 like
               </span>
@@ -53,7 +53,10 @@
           </div>
       </article>
     <footer class="footer">
-      <button class="save__icon-button">
+      <button      
+        type="button" 
+        onclick="window['dialog-id'].showModal()" 
+        aria-controls="dialog-id" class="save__icon-button button">
         <div class="wrapper">
         <svg viewBox="0 0 20 20" class="icon" xmlns="http://www.w3.org/2000/svg">
           <use href="#save-icon"></use>
@@ -63,11 +66,20 @@
           Сохранить на память
         </span>
       </button>
+      <dialog id="dialog-id" class="need_disk">
+        <div class="dialog__text button__text">
+          <svg viewBox="0 0 20 20"
+          class="dialog__icon"
+          xmlns="http://www.w3.org/2000/svg">
+            <use href="#save-icon"></use>
+          </svg>
+          <p>Вставьте
+            дискету, чтобы продолжить</p>
+        </div>
+        <button class="dialog__button button" type="button" onclick="window['dialog-id'].close()">OK</button>
+      </dialog>
     </footer>
     </main>
-
-
-
   </body>    
 </html>
 
