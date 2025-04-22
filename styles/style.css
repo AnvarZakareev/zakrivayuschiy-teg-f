@@ -17,8 +17,13 @@
 
 .button:focus {
   border: none;
-  box-shadow: gray;
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+  transition: box-shadow 0.3s ease;
 }
+
+/* .button:focus-visible {
+  transform: scaleX(1);
+} */
 
 .gum__width {
   width: var(--width);

@@ -6,12 +6,13 @@
     --accent-font-family: "PressStart2P";
     --regular-font-weight: 400;
     --bold-font-weight: 700;
-    /* SIZEx */
+    /* SIZES */
     --width: clamp(375px, 16.285rem + 30.516vw, 43.75rem);
     --text-shadow-color: #FFFFFF;
     --seve-button-width: 335px;
     --seve-button-height: 55px;
-
+    /* COLOR */
+    --accent-color: #000000;
 }
 
 @media (width <= 375px) {
