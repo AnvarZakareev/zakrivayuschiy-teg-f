@@ -15,6 +15,11 @@
   border: 2px solid black;
 }
 
+.button:focus {
+  border: none;
+  box-shadow: gray;
+}
+
 .gum__width {
   width: var(--width);
 }
@@ -142,6 +147,7 @@ background: url(.png);
 
 .card__text {
   margin: 25px;
+  line-height: 21px;
 }
 
 .like-button {
