@@ -248,25 +248,27 @@
         onclick="window['dialog-id'].showModal()" 
         aria-controls="dialog-id" class="save__icon-button button">
         <div class="wrapper">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-            <use href="./svg/floppy.svg#save-icon"></use>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
+            <use class="icon" href="./svg/floppy.svg#save-icon"></use>
           </svg>
         </div>
         <span class="button__text">
           Сохранить на память
         </span>
       </button>
+    </footer>
       <dialog id="dialog-id" class="need_disk">
-        <div class="dialog__text button__text">
-          <svg class="icon-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+        <div class="dialog__text">
+          <svg class="icon-big button svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
             <use href="./svg/floppy.svg#save-icon"></use>
           </svg>
           <p>Вставьте
             дискету, чтобы продолжить</p>
         </div>
-        <button class="dialog__button button" type="button" onclick="window['dialog-id'].close()">OK</button>
+        <button class="dialog__button button" type="button" onclick="window['dialog-id'].close()">
+          <span class="button__text">OK</span>
+        </button>
       </dialog>
-    </footer>
   </body>    
 </html>
 

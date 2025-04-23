@@ -12,7 +12,10 @@
     --seve-button-width: 335px;
     --seve-button-height: 55px;
     /* COLOR */
+    --main-color: #F5F5F5;
     --accent-color: #000000;
+    --background-color:  #FFFFFF;
+    --button-color: #000000;
 }
 
 @media (width <= 375px) {
