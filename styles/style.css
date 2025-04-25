@@ -53,8 +53,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--background-image);
   background: 
-    url("../images/background.png"),
     repeating-linear-gradient(to right, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(#d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
     linear-gradient(transparent 0.01%, #e7e7e7, #1a1a1a);
