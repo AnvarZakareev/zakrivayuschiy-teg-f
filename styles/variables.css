@@ -25,7 +25,7 @@
 @media (width <= 375px) {
     :root {
     /* SIZEx */
-    /* --width: 100%; */
+    --width: 100%;
     --seve-button-width: 306px;
     --seve-button-height: 84px;
     --floppy-width: 29px;
