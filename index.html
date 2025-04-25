@@ -229,10 +229,9 @@
         </div>
         <div class="like-button">
           <button class="card__icon-button">
-      <!-- а вот иконку сердца придётся вставить в 
-      код инлайново. Подробнее об этом в шаге с анимациями -->
-            <!-- <svg class="like-icon is-liked"></svg> -->
-            <img class="like-icon is-liked"  src="./svg/heart in paths.svg" alt="Иконка лайка">
+            <svg class="like-icon is-liked" viewBox="0 0 39 36">
+              <use href="./svg/heart.svg#full_heart"/>
+            </svg>
           </button>
           <button class="card__like-button button">
             <span class="button__text">
@@ -247,11 +246,9 @@
         type="button" 
         onclick="window['dialog-id'].showModal()" 
         aria-controls="dialog-id" class="save__icon-button button">
-        <div class="wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
-            <use class="icon" href="./svg/floppy.svg#save-icon"></use>
+          <svg class="icon" viewBox="0 0 39 39">
+            <use href="./svg/floppy.svg#save-icon"/>
           </svg>
-        </div>
         <span class="button__text">
           Сохранить на память
         </span>
@@ -259,9 +256,9 @@
     </footer>
       <dialog id="dialog-id" class="need_disk">
         <div class="dialog__text">
-          <svg class="icon-big button svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-            <use href="./svg/floppy.svg#save-icon"></use>
-          </svg>
+            <svg class="icon-big" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
+              <use href="./svg/floppy.svg#save-icon"/>
+            </svg>
           <p>Вставьте
             дискету, чтобы продолжить</p>
         </div>

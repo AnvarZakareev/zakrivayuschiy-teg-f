@@ -11,11 +11,15 @@
     --text-shadow-color: #FFFFFF;
     --seve-button-width: 335px;
     --seve-button-height: 55px;
+    --floppy-width: 21px;
     /* COLOR */
-    --main-color: #F5F5F5;
-    --accent-color: #000000;
-    --background-color:  #FFFFFF;
-    --button-color: #000000;
+    --main-color: #000000;
+    --button-color: #F5F5F5;
+    --main-bg-color:  #F5F5F5;
+    --contour-color: #000000;
+    /* SVG */
+    --animation-fill-color: #FF0000;
+    --sparks-opacity: 
 }
 
 @media (width <= 375px) {
@@ -24,5 +28,7 @@
     /* --width: 100%; */
     --seve-button-width: 306px;
     --seve-button-height: 84px;
+    --floppy-width: 29px;
+
     }
 }
