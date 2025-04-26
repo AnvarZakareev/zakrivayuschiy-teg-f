@@ -75,9 +75,9 @@ https://doka.guide/html/figure-figcaption/ -->
           1 спринт: Я — чистый лист
         </h2>
         <div class="overlay">
-          <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
           <picture>
             <source srcset="./images/695x695.png" media="(width >= 700px)">
+            <img class="image gum__width filter__invert" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
           </picture>
           <p class="label">&lt;/HTML&gt;</p>
         </div>
@@ -120,7 +120,7 @@ https://doka.guide/html/figure-figcaption/ -->
         <div class="overlay">
           <picture>
             <source srcset="./images/695x695.png" media="(width >= 700px)">
-            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+            <img class="image gum__width filter__sepia" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
           </picture>
           <p class="label">&lt;CSS&gt;</p>
         </div>
@@ -163,7 +163,7 @@ https://doka.guide/html/figure-figcaption/ -->
         <div class="overlay">
           <picture>
             <source srcset="./images/695x695.png" media="(width >= 700px)">
-            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+            <img class="image gum__width filter__saturate" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
           </picture>
           <p class="label">&lt;desigions&gt;</p>
         </div>
@@ -206,7 +206,7 @@ https://doka.guide/html/figure-figcaption/ -->
         <div class="overlay">
           <picture>
             <source srcset="./images/695x695.png" media="(width >= 700px)">
-            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+            <img class="image gum__width filter__grayscale" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
           </picture>
           <p class="label">care</p>
         </div>
@@ -249,7 +249,7 @@ https://doka.guide/html/figure-figcaption/ -->
         <div class="overlay">
           <picture>
             <source srcset="./images/695x695.png" media="(width >= 700px)">
-            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+            <img class="image gum__width filter__blur" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
           </picture>
           <p class="label">&lt;support&gt;</p>
         </div>
@@ -292,7 +292,7 @@ https://doka.guide/html/figure-figcaption/ -->
         <div class="overlay">
           <picture>
             <source srcset="./images/695x695.png" media="(width >= 700px)">
-            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+            <img class="image gum__width filter__contrast" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
           </picture>
           <p class="label">&lt;lifes-style: none;&gt;</p>
         </div>
@@ -335,7 +335,7 @@ https://doka.guide/html/figure-figcaption/ -->
         <div class="overlay">
           <picture>
             <source srcset="./images/695x695.png" media="(width >= 700px)">
-            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+            <img class="image gum__width filter__combo" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
           </picture>
           <p class="label">&lt;experience&gt;</p>
         </div>
@@ -386,18 +386,18 @@ https://doka.guide/html/figure-figcaption/ -->
         </button>
       </div>
     </main>
-      <dialog id="dialog-id" class="need_disk">
-        <div class="dialog__text">
-            <svg class="icon-big" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
-              <use href="./svg/floppy.svg#save-icon"/>
-            </svg>
-          <p>Вставьте
-            дискету, чтобы продолжить</p>
-        </div>
-        <button class="dialog__button button" type="button" aria-label="OK" onclick="window['dialog-id'].close()">
-          <span class="button__text">OK</span>
-        </button>
-      </dialog>
+    <dialog id="dialog-id" class="need_disk">
+      <div class="dialog__text">
+          <svg class="icon-big" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
+            <use href="./svg/floppy.svg#save-icon"/>
+          </svg>
+        <p>Вставьте
+          дискету, чтобы продолжить</p>
+      </div>
+      <button class="dialog__button button" type="button" aria-label="OK" onclick="window['dialog-id'].close()">
+        <span class="button__text">OK</span>
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>    
 </html>
