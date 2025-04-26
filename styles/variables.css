@@ -3,7 +3,7 @@
 :root {
     --background-image: url("../images/background.png");
     /* FONTS */
-    --font-family: 'Inter-Variable';
+    --font-family: "Inter-Variable";
     --accent-font-family: "PressStart2P";
     --regular-font-weight: 400;
     --bold-font-weight: 700;
