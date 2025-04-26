@@ -14,13 +14,11 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header">
-      <div class="header__container gum__width">
+    <header class="header gum__width">
         <p class="header__logo">&lt;/html&gt;</p>
         <h1 class="header__title">
           закрывающий тег
         </h1>
-      </div>  
     </header>
     <main class="main">
       <article class="article-card gum__width">
@@ -28,18 +26,20 @@
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
           <div class="overlay">
-            <img class="image gum__width" src="./images/image.png" alt='Фургон в "пиксельном" стиле'>
-            <p class="label">&lt;HTML&gt;</p>
+            <picture>
+              <source srcset="./images/695x695.png" media="(width >= 700px)">
+              <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+            </picture>
+            <p class="label">&lt;/HTML&gt;</p>
           </div>
           <div class="card__text">
-            <p>Это было самое начало пути. На этом этапе важно было проникнуться 
+            <p style="margin-bottom: 27px;">Это было самое начало пути. На этом этапе важно было проникнуться 
             основами и настроиться на учёбу. И, возможно, подумать, как новые 
             знания могут повлиять на ваше будущее.</p>
-            <br />
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="like-button">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button" aria-label="ЛАЙК">
               <svg class="like-icon is-liked" viewBox="0 0 39 36"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none">
@@ -59,9 +59,9 @@
                 d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button" aria-label="ЛАЙК">
               <span class="button__text">
-                like
+                Like
               </span>
             </button>
           </div>
@@ -71,7 +71,10 @@
           1 спринт: Я — чистый лист
         </h2>
         <div class="overlay">
-          <img class="image gum__width filter__sepia" src="./images/image.png" alt='Фургон в "пиксельном" стиле'>
+          <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+          <picture>
+            <source srcset="./images/695x695.png" media="(width >= 700px)">
+          </picture>
           <p class="label">&lt;/HTML&gt;</p>
         </div>
         <div class="card__text">
@@ -80,7 +83,7 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="like-button">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button"  aria-label="ЛАЙК">
             <svg class="like-icon is-liked" viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg"
               fill="none">
@@ -100,9 +103,9 @@
               d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button" aria-label="ЛАЙК">
             <span class="button__text">
-              like
+              Like
             </span>
           </button>
         </div>
@@ -112,7 +115,10 @@
           1 спринт: А если не получится?
         </h2>
         <div class="overlay">
-          <img class="image gum__width filter__contrast" src="./images/image.png" alt='Фургон в "пиксельном" стиле'>
+          <picture>
+            <source srcset="./images/695x695.png" media="(width >= 700px)">
+            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+          </picture>
           <p class="label">&lt;CSS&gt;</p>
         </div>
         <div class="card__text">
@@ -121,7 +127,7 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="like-button">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button" aria-label="ЛАЙК">
             <svg class="like-icon is-liked" viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg"
               fill="none">
@@ -141,9 +147,9 @@
               d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button" aria-label="ЛАЙК">
             <span class="button__text">
-              like
+              Like
             </span>
           </button>
         </div>
@@ -153,7 +159,10 @@
           2 спринт: Погоня за идеалом
         </h2>
         <div class="overlay">
-          <img class="image gum__width filter__grayscale" src="./images/image.png" alt='Фургон в "пиксельном" стиле'>
+          <picture>
+            <source srcset="./images/695x695.png" media="(width >= 700px)">
+            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+          </picture>
           <p class="label">&lt;desigions&gt;</p>
         </div>
         <div class="card__text">
@@ -162,7 +171,7 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="like-button">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button" aria-label="ЛАЙК">
             <svg class="like-icon is-liked" viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg"
               fill="none">
@@ -182,9 +191,9 @@
               d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button" aria-label="ЛАЙК">
             <span class="button__text">
-              like
+              Like
             </span>
           </button>
         </div>
@@ -194,7 +203,10 @@
           2 спринт: О тех, кто рядом
         </h2>
         <div class="overlay">
-          <img class="image gum__width filter__invert" src="./images/image.png" alt='Фургон в "пиксельном" стиле'>
+          <picture>
+            <source srcset="./images/695x695.png" media="(width >= 700px)">
+            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+          </picture>
           <p class="label">care</p>
         </div>
         <div class="card__text">
@@ -203,7 +215,7 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="like-button">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button" aria-label="ЛАЙК">
             <svg class="like-icon is-liked" viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg"
               fill="none">
@@ -223,9 +235,9 @@
               d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button" aria-label="ЛАЙК">
             <span class="button__text">
-              like
+              Like
             </span>
           </button>
         </div>
@@ -235,7 +247,10 @@
           3 спринт: Обходные стратегии
         </h2>
         <div class="overlay">
-          <img class="image gum__width filter__saturate" src="./images/image.png" alt='Фургон в "пиксельном" стиле'>
+          <picture>
+            <source srcset="./images/695x695.png" media="(width >= 700px)">
+            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+          </picture>
           <p class="label">&lt;support&gt;</p>
         </div>
         <div class="card__text">
@@ -244,7 +259,7 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="like-button">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button" aria-label="ЛАЙК">
             <svg class="like-icon is-liked" viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg"
               fill="none">
@@ -264,9 +279,9 @@
               d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button" aria-label="ЛАЙК">
             <span class="button__text">
-              like
+              Like
             </span>
           </button>
         </div>
@@ -276,7 +291,10 @@
           3 спринт: Когда опускаются руки
         </h2>
         <div class="overlay">
-          <img class="image gum__width filter__blur" src="./images/image.png" alt='Фургон в "пиксельном" стиле'>
+          <picture>
+            <source srcset="./images/695x695.png" media="(width >= 700px)">
+            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+          </picture>
           <p class="label">&lt;lifes-style: none;&gt;</p>
         </div>
         <div class="card__text">
@@ -285,7 +303,7 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="like-button">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button" aria-label="ЛАЙК">
             <svg class="like-icon is-liked" viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg"
               fill="none">
@@ -305,9 +323,9 @@
               d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button" aria-label="ЛАЙК">
             <span class="button__text">
-              like
+              Like
             </span>
           </button>
         </div>
@@ -317,7 +335,10 @@
           «Сейчас я здесь»
         </h2>
         <div class="overlay">
-          <img class="image gum__width filter__combo" src="./images/image.png" alt='Фургон в "пиксельном" стиле'>
+          <picture>
+            <source srcset="./images/695x695.png" media="(width >= 700px)">
+            <img class="image gum__width" src="./images/image.png" loading="lazy" alt='Фургон в "пиксельном" стиле'>
+          </picture>
           <p class="label">&lt;experience&gt;</p>
         </div>
         <div class="card__text">
@@ -326,7 +347,7 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="like-button">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button" aria-label="ЛАЙК">
             <svg class="like-icon is-liked" viewBox="0 0 39 36"
               xmlns="http://www.w3.org/2000/svg"
               fill="none">
@@ -346,7 +367,7 @@
               d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button" aria-label="ЛАЙК">
             <span class="button__text">
               Like
             </span>
@@ -356,7 +377,8 @@
     </main>
     <footer class="footer">
       <button      
-        type="button" 
+        type="button"
+        aria-label="Сохранить на память"
         onclick="window['dialog-id'].showModal()" 
         aria-controls="dialog-id" class="save__icon-button button">
           <svg class="icon" viewBox="0 0 39 39">
@@ -375,7 +397,7 @@
           <p>Вставьте
             дискету, чтобы продолжить</p>
         </div>
-        <button class="dialog__button button" type="button" onclick="window['dialog-id'].close()">
+        <button class="dialog__button button" type="button" aria-label="OK" onclick="window['dialog-id'].close()">
           <span class="button__text">OK</span>
         </button>
       </dialog>

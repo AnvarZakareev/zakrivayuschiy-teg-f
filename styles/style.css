@@ -51,6 +51,8 @@
 }
 
 .page {
+  display: grid;
+  justify-content: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-image: var(--background-image);
@@ -69,11 +71,6 @@
       ------- */
 
 .header {
-  display: grid;
-  justify-content: center;
-}
-
-.header__container {
   box-sizing: border-box;
   display: grid;
   justify-content: center;
@@ -86,14 +83,14 @@
 }
 
 .header__logo {
-  font-size: clamp(2.722rem, 1.697rem + 4.923vw, 3.611rem);
+  font-size: clamp(49px, 1.697rem + 4.923vw, 65px);
   text-transform: uppercase;
   margin-block-end: 20px;
 }
 
 .header__title {
   text-transform: uppercase;
-  font-size: clamp(0.778rem, 0.201rem + 2.769vw, 1.278rem);
+  font-size: clamp(14px, 0.201rem + 2.769vw, 23px);
 }
 
       /*------
@@ -103,7 +100,6 @@
 .main {
   display: grid;
   gap: 50px;
-  justify-content: center;
 }
 
 .overlay {
@@ -112,8 +108,9 @@
 
 /* ЛЕЙБЛ - текст в углу картинки*/
 .label {
+  font-size: 14px;
   position: absolute;
-  top: 20px;
+  top: 24px;
   right: clamp(0.8125rem, 0.6683rem + 0.6154vw, 0.9375rem);
   font-family: var(--accent-font-family), Georgia, serif;
   opacity: 0.5;
@@ -132,7 +129,6 @@
   background-color: var(--main-bg-color);
   display: grid;
   justify-content: center;
-  max-width: 696px;
   width: var(--box-width);
   border: 2px solid black;
 }
@@ -140,27 +136,27 @@
 .card__titel {
   font-size: 18px;
   font-variation-settings: "wght" var(--bold-font-weight);
-  margin-inline: 10px;
-  margin-block: 3px;
+  margin-inline: 11px;
+  margin-block: 5px;
+  line-height: 21px;
 }
 
 .image {
   position: relative;
   background-size: contain;
-  border: 2px solid black;
 }
 
 .card__text {
+  font-size: 18px;
   margin: 25px;
   line-height: 21px;
 }
 
 .like-button {
   display: flex;
-  gap: 12px;
   justify-content: end;
   margin-block-end: 25px;
-  margin-inline-end: 25px;
+  margin-inline-end: 26px;
   height: 38px;
 }
 
@@ -320,4 +316,10 @@
 
 .icon-big {
   width: 80.5px;
+}
+
+@media (width >= 1000px) {
+  .card__text {
+    margin-top: 21px;
+}
 }
