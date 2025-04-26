@@ -47,7 +47,7 @@
 } 
 
 .gum__width {
-  width: var(--width);
+  width: var(--box-width);
 }
 
 .page {
@@ -133,7 +133,7 @@
   display: grid;
   justify-content: center;
   max-width: 696px;
-  width: var(--width);
+  width: var(--box-width);
   border: 2px solid black;
 }
 
