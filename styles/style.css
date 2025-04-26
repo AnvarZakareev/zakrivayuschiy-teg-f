@@ -110,7 +110,7 @@
 .label {
   font-size: 14px;
   position: absolute;
-  top: 24px;
+  top: 26px;
   right: clamp(0.8125rem, 0.6683rem + 0.6154vw, 0.9375rem);
   font-family: var(--accent-font-family), Georgia, serif;
   opacity: 0.5;
@@ -150,6 +150,10 @@
   font-size: 18px;
   margin: 25px;
   line-height: 21px;
+}
+
+.first_paragraph {
+  margin-block-end: 27px;
 }
 
 .like-button {
@@ -237,14 +241,8 @@
   filter: brightness(200%) hue-rotate(-10deg);
 }
 
-
-    /* -------
-        FOOTER
-      -------- */
-
 .footer {
   display: flex;
-  margin-block-start: 52px;
   justify-content: center;
 }
 
@@ -319,7 +317,11 @@
 }
 
 @media (width >= 1000px) {
+  /* .main {
+    gap: 60px
+  } */
+
   .card__text {
     margin-top: 21px;
-}
+  }
 }
