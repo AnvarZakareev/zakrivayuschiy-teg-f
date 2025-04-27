@@ -1,70 +1,64 @@
-/* Анимации сердечка */
-
 .like-icon:hover .core {
-    fill: var(--accent-color);
-    transition: fill 0.3s linear;
+  fill: var(--accent-color);
+  transition: fill 0.3s linear;
 }
-  /* А в обратной ситуации, когда курсор уходит, 
-  — с задержкой в 0.03s, ведь вам нужно будет дождаться, когда потухнет основное тело. */
+
+.like-icon:hover .main-body {
+  fill: var(--accent-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s 0.05s linear;
+}
   
-  .like-icon:hover .main-body {
-    fill: var(--accent-color);
-    transition: fill 0.3s 0.05s linear;
-  }
-  /* А когда курсор уходит с сердца, основное тело, наоборот, 
-  становится прозрачным без задержек и перекрашивается всё те же 0.3s . */
-  
-  .like-icon:active .core {
-    fill: var(--animation-fill-color);
-    transition: fill 0.3s linear;
-  }
-  
-  .like-icon:active .main-body {
-      fill: var(--animation-fill-color);
-      transition: fill 0.3s 0.05s linear;
-    }
-    
-    .like-icon.is-liked .core {
-        fill: var(--animation-fill-color);
-        transition: fill 0.3s linear;
-    }
-  
-    .like-icon.is-liked .main-body {
-        fill: var(--animation-fill-color);
-    transition: fill 0.3s 0.05s linear;
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .contour {
-    fill: var(--animation-fill-color);
-    transition: fill 0.3s 0.06s linear;
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s 0.06s linear;
 }
 
 .like-icon.is-liked .heart {
-    animation: 
-      herat_scale 0.3s ease-in 1 0.1s ;
-    }
-    
-    .like-icon.is-liked .sparks {
-        animation: 
-      sparks_opacity 0.3s ease-in 1 0.3s ;
+  animation: 
+    herat_scale 0.3s ease-in 1 0.1s ;
+  }
+  
+.like-icon.is-liked .sparks {
+  animation: 
+    sparks_opacity 0.3s ease-in 1 0.3s ;
   }
   
 @keyframes herat_scale {
-    from {
-    scale: 1;
-    transform-origin: center
-    }
-    to {
-    scale: 1.25;
-    transform-origin: center
-    }
+  from {
+  scale: 1;
+  transform-origin: center
+  }
+  to {
+  scale: 1.25;
+  transform-origin: center
+  }
 }
     
 @keyframes sparks_opacity {
-    from {
-    opacity: 0.75;
-    }
-    to {
-    opacity: 0;
-    }
+  from {
+  opacity: 0.75;
+  }
+  to {
+  opacity: 0;
+  }
 }
