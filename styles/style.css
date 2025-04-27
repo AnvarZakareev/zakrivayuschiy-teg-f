@@ -144,6 +144,7 @@
 .image {
   position: relative;
   background-size: contain;
+  border: 2px solid black;
 }
 
 .card__text {
@@ -320,4 +321,11 @@
   .card__text {
     margin-top: 21px;
   }
+}
+
+@media (width <= 375px) {
+  .image {
+  border: none;
+  border-bottom: 2px solid black;
+}
 }

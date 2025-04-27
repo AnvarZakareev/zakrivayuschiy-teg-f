@@ -26,11 +26,10 @@
 
 @media (width <= 375px) {
     :root {
-    /* SIZES */
-    --box-width: 100%;
-    --seve-button-width: 306px;
-    --seve-button-height: 84px;
-    --floppy-width: 29px;
-
+        /* SIZES */
+        --box-width: 100%;
+        --seve-button-width: 306px;
+        --seve-button-height: 84px;
+        --floppy-width: 29px;
     }
 }
