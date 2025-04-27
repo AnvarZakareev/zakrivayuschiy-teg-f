@@ -149,14 +149,12 @@
 }
 
 .card__text {
+  display: grid;
+  gap: 27px;
   font-size: 18px;
   margin: 25px;
   line-height: 21px;
   margin-top: 21px;
-}
-
-.paragraph_margin {
-  margin-block-end: 27px;
 }
 
 .like-button {
