@@ -1,35 +1,34 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --background-image: url(../images/background.png);
-    /* FONTS */
-    /* FONTS */
-    --font-family: "Inter-Variable";
-    --accent-font-family: "PressStart2P";
-    --regular-font-weight: 400;
-    --bold-font-weight: 700;
-    /* SIZES */
-    --box-width: clamp(375px, 16.285rem + 30.516vw, 43.75rem);
-    --seve-button-width: 335px;
-    --seve-button-height: 55px;
-    --floppy-width: 21px;
-    /* COLOR */
-    --text-shadow-color: #fff;
-    --main-color: #000;
-    --button-color: #F5F5F5;
-    --main-bg-color:  #fff;
-    /* SVG */
-    --accent-color: #000;
-    --contour-color: #000;
-    --animation-fill-color: #FF0000;
+  --background-image: url(../images/background.png);
+  /* FONTS */
+  --font-family: "Inter-Variable";
+  --accent-font-family: "PressStart2P";
+  --regular-font-weight: 400;
+  --bold-font-weight: 700;
+  /* SIZES */
+  --box-width: clamp(375px, 16.285rem + 30.516vw, 43.75rem);
+  --seve-button-width: 335px;
+  --seve-button-height: 55px;
+  --floppy-width: 21px;
+  /* COLOR */
+  --text-shadow-color: #fff;
+  --main-color: #000;
+  --button-color: #F5F5F5;
+  --main-bg-color:  #fff;
+  /* SVG */
+  --accent-color: #000;
+  --contour-color: #000;
+  --animation-fill-color: #FF0000;
 }
 
 @media (width <= 375px) {
-    :root {
-        /* SIZES */
-        --box-width: 100%;
-        --seve-button-width: 306px;
-        --seve-button-height: 84px;
-        --floppy-width: 29px;
-    }
+  :root {
+    /* SIZES */
+    --box-width: 100%;
+    --seve-button-width: 306px;
+    --seve-button-height: 84px;
+    --floppy-width: 29px;
+  }
 }

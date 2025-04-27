@@ -107,6 +107,7 @@
 }
 
 /* ЛЕЙБЛ - текст в углу картинки*/
+
 .label {
   font-size: 14px;
   position: absolute;
@@ -167,6 +168,7 @@
 }
 
 /* Сердечко  */
+
 .like-icon {
   width: 38px;
 }
@@ -186,8 +188,6 @@
 .like-icon .sparks {
   opacity: 0;
 }
-
-
 
 .card__icon-button {
   border: 2px solid transparent;
@@ -211,9 +211,7 @@
   height: 38px;
 }
 
-    /*------------------- 
-      FILTERs FOR IMAGES
-    --------------------*/
+/* Фильтры для картинок */
 
 .filter__invert {
   filter: invert(1);
@@ -304,10 +302,9 @@
   height: 38px;
 }
 
-
-/* -----
-   SVG 
- ----- */
+      /* -----
+        SVG 
+      ----- */
 
 .icon {
   width: var(--floppy-width);
@@ -317,6 +314,9 @@
   width: 80.5px;
 }
 
+      /* ------
+        375px
+      ------- */
 
 @media (width <= 375px) {
   .image {
