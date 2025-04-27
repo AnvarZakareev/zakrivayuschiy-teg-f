@@ -328,6 +328,9 @@
   .card__text {
     margin-top: 25px;
   }
+  .save__icon-button {
+    margin-block-end: 100px;
+  }
   .need_disk {
     width: 341px;
   }
