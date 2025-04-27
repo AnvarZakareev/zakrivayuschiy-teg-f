@@ -10,17 +10,17 @@
     --bold-font-weight: 700;
     /* SIZES */
     --box-width: clamp(375px, 16.285rem + 30.516vw, 43.75rem);
-    --text-shadow-color: #FFFFFF;
     --seve-button-width: 335px;
     --seve-button-height: 55px;
     --floppy-width: 21px;
     /* COLOR */
-    --main-color: #000000;
+    --text-shadow-color: #fff;
+    --main-color: #000;
     --button-color: #F5F5F5;
-    --main-bg-color:  #F5F5F5;
+    --main-bg-color:  #fff;
     /* SVG */
-    --accent-color: #000000;
-    --contour-color: #000000;
+    --accent-color: #000;
+    --contour-color: #000;
     --animation-fill-color: #FF0000;
 }
 

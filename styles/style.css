@@ -110,8 +110,8 @@
 .label {
   font-size: 14px;
   position: absolute;
-  top: 26px;
-  right: clamp(0.8125rem, 0.6683rem + 0.6154vw, 0.9375rem);
+  top: 27px;
+  right: 27px;
   font-family: var(--accent-font-family), Georgia, serif;
   opacity: 0.5;
   text-shadow: -1px 0 var(--text-shadow-color), 0 1px var(--text-shadow-color), 1px 0 var(--text-shadow-color), 0 -1px var(--text-shadow-color);
@@ -151,9 +151,10 @@
   font-size: 18px;
   margin: 25px;
   line-height: 21px;
+  margin-top: 21px;
 }
 
-.first_paragraph {
+.paragraph_margin {
   margin-block-end: 27px;
 }
 
@@ -270,11 +271,11 @@
   height: 191px;
 }
 
-.need_disk:open {
+.need_disk[open] {
   background-color: var(--main-bg-color);
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 27px;
   padding: 30px;
   align-items: center;
   justify-items: center;
@@ -295,7 +296,7 @@
   font-family: var(--accent-font-family), Georgia, serif;
   font-size: 14px;
   text-transform: uppercase;
-  line-height: 150%;
+  line-height: 21px;
 }
 
 .dialog__button {
@@ -317,15 +318,22 @@
 }
 
 
-@media (width >= 1000px) {
-  .card__text {
-    margin-top: 21px;
-  }
-}
-
 @media (width <= 375px) {
   .image {
   border: none;
-  border-bottom: 2px solid black;
-}
+  outline: 2px solid black;
+  }
+  .label {
+    top: 25px;
+    right: 11px;
+  }
+  .card__text {
+    margin-top: 0;
+  }
+  .need_disk {
+    width: 341px;
+  }
+  .icon-big {
+    width: 80px;
+  }
 }
